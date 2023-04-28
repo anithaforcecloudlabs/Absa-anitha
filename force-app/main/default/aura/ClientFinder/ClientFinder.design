@@ -1,0 +1,37 @@
+<design:component>
+  <design:attribute name="isCompactView" label="isCompactView" />
+  <design:attribute
+    name="showCreateIndividualProspect"
+    label="showCreateIndividualProspect"
+  />
+  <design:attribute
+    name="showCreateBusinessProspect"
+    label="showCreateBusinessProspect"
+  />
+  <design:attribute
+    name="showCreateBusinessProspectOnboarding"
+    label="showCreateBusinessProspectOnboarding"
+  />
+    <design:attribute
+    name="showCreateIndividualProspectOnboarding"
+    label="showCreateIndividualProspectOnboarding"
+  />
+  <!--create stokvel onboarding-->
+  <design:attribute
+  name="showCreateStokvelProspectOnboarding"
+  label="showCreateStokvelProspectOnboarding"
+/>
+  <design:attribute name="showProductSelection" label="showProductSelection" />
+  <design:attribute
+    name="showParticipantSelection"
+    label="showParticipantSelection"
+  />
+  <design:attribute name="showContactSelection" label="showContactSelection" />
+  <design:attribute name="showCaseHistory" label="showCaseHistory" />
+  <design:attribute name="showLeadHistory" label="showLeadHistory" />
+  <design:attribute
+    name="showCreateRelatedParty"
+    label="showCreateRelatedParty"
+  />
+  <design:attribute name="parentId" label="parentId" />
+</design:component>
