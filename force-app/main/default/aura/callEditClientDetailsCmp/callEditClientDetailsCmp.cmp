@@ -1,0 +1,30 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 04-24-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<aura:component
+	implements="force:appHostable,lightning:isUrlAddressable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction,force:hasRecordId,lightning:actionOverride"
+	access="global"
+>
+	<aura:attribute name="recordId" type="String" />
+	<aura:attribute name="opportunityId" type="String" />
+	<aura:attribute name="opportunityRecord" type="Object" />
+    <aura:attribute name="accountRecord" type="Object" />
+	<aura:attribute name="recordLoadError" type="String" />
+    <aura:attribute name="errorMessage" type="String" />
+	<lightning:workspaceAPI aura:id="workspace" />
+    
+   
+          <force:recordData 
+                 aura:id="recordLoader"
+                 recordId="{!v.recordId}"
+                 layoutType="FULL"
+                 fields="Id,Entity_Type__c,ExecutionLayerRequestID_Text__c,AccountId,Account.VAT_Registration_Number__c,Process_Type__c,Account.Place_of_Residence__c,Account.Client_Group__c" 
+                 targetFields="{!v.opportunityRecord}"
+                  recordUpdated="{!c.navigateToEditCmp}"
+                   />
+       
+</aura:component>
